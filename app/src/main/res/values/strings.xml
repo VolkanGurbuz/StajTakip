@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">StajTakip</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="uygulamabilgisi">Stajyer takip ve yoklama uygulamasini kullanarak tum ogrencilerinizin uzaktan yoklama bilgilerini detaylari ile akilli telefonunuzdan ogrenebilirsiniz.
+    Egitmen veya Yetkili olarak uygulamaya giris yapip, yoklamalari duzenleyebilirsiniz.
+     Suan egitmen olarak giris yapmis bulunuyorsunuz.
+        Egitmen olarak kayit oldugunuz staj yerinizi secip kayitli oldugunuz ogrencilerinizi gorebilirsiniz. Tarihe gore filtreleyip, yoklamanizi sisteme gonderip ilgili yetkili kisinin gormesini saglayabilirsiniz.
+
+    </string>
 </resources>
