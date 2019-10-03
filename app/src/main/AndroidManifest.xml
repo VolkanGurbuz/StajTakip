@@ -12,9 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoBar">
+        <activity android:name=".TeacherMainActivity"></activity>
         <activity
             android:name=".AdminMenuActivity"
-            android:theme="@style/AppThemeNoBar.NoActionBar"></activity>
+            android:theme="@style/AppThemeNoBar.NoActionBar" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
