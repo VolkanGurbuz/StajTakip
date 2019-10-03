@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StajOgrenciActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/line1"
+        android:background="@color/colorCell"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Staj Yeri: "
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/robotobold"
+            android:id="@+id/sube"
+            android:textSize="15dp"
+            android:layout_weight = "1"
+            android:gravity = "right"
+            android:paddingRight="5dp"
+            />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:spinnerMode="dropdown"
+            android:gravity = "right"
+            android:theme="@style/Spinner"
+            android:id="@+id/spinnerClassManager"
+            >
+
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarih: "
+            android:id="@+id/date"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/robotobold"
+            android:textSize="15dp"
+            android:layout_weight = "1"
+            android:gravity = "right"
+            android:padding = "5dp"
+            />
+
+        <EditText
+            android:id="@+id/dateWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/date"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="false"
+            android:inputType="none"
+            android:gravity="center"
+            android:paddingRight="2dp"
+            android:text="02.03.2018"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id = "@+id/baslik"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_below="@id/line1"
+        android:background = "@color/colorCell" >
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1.5"
+            android:gravity = "left"
+            android:fontFamily="@font/robotobold"
+            android:padding = "5dp"
+            android:textSize="15dp"
+            android:text = "Öğrenci Ad Soyad"
+            android:textColor = "#ffffff" />
+
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1.6"
+            android:gravity = "center"
+            android:fontFamily="@font/robotobold"
+            android:padding = "5dp"
+            android:text = "Yoklama Zamani"
+            android:textColor = "#ffffff" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:fontFamily="@font/robotobold"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "Kıyafet"
+            android:textColor = "#ffffff" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:fontFamily="@font/robotobold"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "Detay"
+            android:textColor = "#ffffff" />
+
+
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_manager"
+        android:layout_margin="5dp"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/baslik"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <io.github.yavski.fabspeeddial.FabSpeedDial
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:fabGravity="bottom_end"
+            android:id="@+id/fab_speed_btn_manager"
+            app:fabMenu="@menu/speed_dial_ogrencistaj_menu"
+            app:miniFabBackgroundTint="@android:color/white"
+            app:miniFabDrawableTint="?attr/colorPrimaryDark"
+            app:miniFabTitleTextColor="?attr/colorPrimaryDark" />
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

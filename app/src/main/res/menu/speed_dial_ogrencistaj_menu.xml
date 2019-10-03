@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_send"
+        android:icon="@drawable/ic_send"
+        android:title="Yoklamayi Gonder"/>
+
+    <item
+        android:id="@+id/action_grade"
+        android:icon="@drawable/ic_notlandir"
+        android:title="Notlandir"/>
+
+
+    <item
+        android:id="@+id/action_call"
+        android:icon="@drawable/ic_call"
+        android:title="Yetkiliyi Ara" />
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_add"
+        android:title="Ogretmen Ekle" />
+</menu>
