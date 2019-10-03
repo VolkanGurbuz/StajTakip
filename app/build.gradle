@@ -31,4 +31,7 @@ dependencies {
     implementation "com.android.support:recyclerview-v7:$androidVersion"
     implementation "com.android.support:design:$androidVersion"
 
+    implementation 'io.github.yavski:fab-speed-dial:1.0.6'
+
+
 }

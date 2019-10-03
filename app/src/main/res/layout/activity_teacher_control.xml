@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    card_view:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <TextView
+                android:id="@+id/textviewOgretmen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="Sorumlu Adi: "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinnerClassOgretmenler"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/textviewOgretmen"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="122dp"
+                android:defaultFocusHighlightEnabled="true"
+                android:focusedByDefault="true"
+                android:spinnerMode="dropdown"
+                android:theme="@style/Spinner" />
+
+
+        </RelativeLayout>
+
+        <!--The layout below is my ExpandableLayout -->
+        <LinearLayout
+            android:id="@+id/expandable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <!-- Row 3 -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shrinkColumns="1,3,5,7,9">
+
+                <LinearLayout
+                    android:id="@+id/baslik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line1"
+                    android:background="@color/colorCell"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/robotobold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Calistigi Yerler"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/robotobold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Mevcut"
+                        android:textColor="#ffffff" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#71c6ab"
+                    android:padding="10dp"
+                    tools:context=".activity.PackDocActivity2">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view_ogretmen_class_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:background="@color/colorBackground"
+                        android:gravity="left"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="1"
+                        android:padding="5dp"
+                        android:verticalSpacing="5dp" />
+
+
+                    <io.github.yavski.fabspeeddial.FabSpeedDial
+                        android:id="@+id/fab_speed_btn_ogretmen_kontrol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginBottom="41dp"
+                        app:fabGravity="bottom_end"
+                        app:fabMenu="@menu/speed_dial_menu_teacher_add"
+                        app:miniFabBackgroundTint="@android:color/white"
+                        app:miniFabDrawableTint="?attr/colorPrimaryDark"
+                        app:miniFabTitleTextColor="?attr/colorPrimaryDark" />
+                    <!--
+                    <GridView
+                        android:id="@+id/gridview_invcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.20"
+                        android:background="#e8ea63"
+                        android:gravity="left"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="1"
+                        android:padding="5dp"
+                        android:verticalSpacing="5dp" />
+
+                    <GridView
+                        android:id="@+id/gridview_invname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.20"
+                        android:background="#e8ea63"
+                        android:gravity="left"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="1"
+                        android:padding="5dp"
+                        android:verticalSpacing="5dp" />
+
+                    <GridView
+                        android:id="@+id/gridview_release_quantity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.20"
+                        android:background="#e8ea63"
+                        android:gravity="left"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="1"
+                        android:padding="5dp"
+                        android:verticalSpacing="5dp" />
+
+                    <GridView
+                        android:id="@+id/gridview_quantity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.20"
+                        android:background="#e8ea63"
+                        android:gravity="left"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="1"
+                        android:padding="5dp"
+                        android:verticalSpacing="5dp" /> -->
+
+
+                </RelativeLayout>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

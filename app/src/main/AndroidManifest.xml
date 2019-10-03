@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoBar">
-        <activity android:name=".TeacherMainActivity"></activity>
+        <activity android:name=".TeacherControlActivity"></activity>
+        <activity android:name=".TeacherMainActivity" />
         <activity
             android:name=".AdminMenuActivity"
             android:theme="@style/AppThemeNoBar.NoActionBar" />
