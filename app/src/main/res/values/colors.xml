@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorText">#6F7CE5</color>
+    <color name="colorCell">#6F7CE5</color>
+    <color name="colorMaterialGreen">#00bfa5</color>
+
+    <color name="colorMaterialBlue">#336699</color>
+
+    <color name="colorBackground">#fcfcfc</color>
+    <color name="colorLightGrayLine">#ededed</color>
+    <color name="colorDeppPurple">#7c4dff</color>
+    <color name="colorMaterialYellow">#ffb300</color>
+
+    <color name="colorDarkGrayLine">#666666</color>
+    <color name="colorAtomicTangerine">#FF9966</color>
+</resources>
