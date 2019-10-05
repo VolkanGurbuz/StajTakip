@@ -1,4 +1,4 @@
-package com.volkangurbuz.stajtakip.rest;
+package com.volkangurbuz.stajtakip.Rest;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
