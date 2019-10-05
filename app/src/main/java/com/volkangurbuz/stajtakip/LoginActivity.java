@@ -1,6 +1,5 @@
 package com.volkangurbuz.stajtakip;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
@@ -20,7 +19,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.volkangurbuz.stajtakip.rest.UserManager;
+import com.volkangurbuz.stajtakip.Rest.UserManager;
 
 import java.util.HashMap;
 import java.util.Map;
