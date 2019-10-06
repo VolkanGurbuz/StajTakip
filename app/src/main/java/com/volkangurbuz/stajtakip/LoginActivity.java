@@ -19,7 +19,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.volkangurbuz.stajtakip.Rest.UserManager;
+import com.volkangurbuz.stajtakip.Util.Constants;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -92,7 +92,7 @@ public class LoginActivity extends AppCompatActivity {
       StringRequest loginRequest =
           new StringRequest(
               Request.Method.POST,
-              UserManager.LOGIN_URL,
+              Constants.LOGIN_URL,
               new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
