@@ -20,4 +20,5 @@ public class StudentListViewModel extends ViewModel {
   public LiveData<List<Student>> getStudents() {
     return mStudentRepository.getStudents();
   }
+
 }
