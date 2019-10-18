@@ -21,4 +21,8 @@ public class StudentListViewModel extends ViewModel {
     return mStudentRepository.getStudents();
   }
 
+  public void getStudentsApi() {
+
+    mStudentRepository.getStudentsApi();
+  }
 }

@@ -42,7 +42,7 @@ public class StudentApiClient {
     return mStudents;
   }
 
-  public void getStudentsApi() {
+  public void showAllStudentsApi() {
 
     if (retrieveStudentsRunnable != null) {
 
@@ -96,12 +96,17 @@ public class StudentApiClient {
 
         // the request was success
         if (response.code() == 200) {
+          Log.d(TAG, "Error: " + " no ");
+
           List<Student> students =
               new ArrayList<Student>(((StudentResponse) response.body()).getStudentList());
+
+          mStudents.postValue(students);
+
         } else {
 
           String error = response.errorBody().string();
-          Log.d(TAG, "run: " + error);
+          Log.d(TAG, "Error: " + error);
           mStudents.postValue(null);
         }
 
