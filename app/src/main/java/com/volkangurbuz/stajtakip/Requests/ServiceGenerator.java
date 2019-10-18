@@ -14,10 +14,10 @@ public class ServiceGenerator {
 
   private static Retrofit retrofit = retrofitBuilder.build();
 
-  private static RecipeApi recipeApi = retrofit.create(RecipeApi.class);
+  private static WebApi webApi = retrofit.create(WebApi.class);
 
-  public static RecipeApi getRecipeApi() {
+  public static WebApi getWebApi() {
 
-    return recipeApi;
+    return webApi;
   }
 }
