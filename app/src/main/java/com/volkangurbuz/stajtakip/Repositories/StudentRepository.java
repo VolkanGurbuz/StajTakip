@@ -28,4 +28,9 @@ public class StudentRepository {
 
     return mStudentApiClient.getStudents();
   }
+
+  public void getStudentsApi() {
+
+    mStudentApiClient.showAllStudentsApi();
+  }
 }
