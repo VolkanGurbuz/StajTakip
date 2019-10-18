@@ -42,7 +42,7 @@ public class StudentApiClient {
     return mStudents;
   }
 
-  public void searchStudentsApi() {
+  public void getStudentsApi() {
 
     if (retrieveStudentsRunnable != null) {
 
