@@ -4,13 +4,14 @@ import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 
 import com.volkangurbuz.stajtakip.Models.Student;
+import com.volkangurbuz.stajtakip.Requests.StudentApiClient;
 
 import java.util.List;
 
 public class StudentRepository {
 
   private static StudentRepository instance;
-  private MutableLiveData<List<Student>> mStudents;
+  private StudentApiClient mStudentApiClient;
 
   public static StudentRepository getInstance() {
     if (instance == null) {
@@ -20,10 +21,11 @@ public class StudentRepository {
   }
 
   public StudentRepository() {
-    mStudents = new MutableLiveData<>();
+    mStudentApiClient = StudentApiClient.getInstance();
   }
 
   public LiveData<List<Student>> getStudents() {
-    return mStudents;
+
+    return mStudentApiClient.getStudents();
   }
 }
