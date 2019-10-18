@@ -99,7 +99,7 @@ public class StudentApiClient {
           Log.d(TAG, "Error: " + " no ");
 
           List<Student> students =
-              new ArrayList<Student>(((StudentResponse) response.body()).getStudentList());
+              new ArrayList<>(((StudentResponse) response.body()).getStudentList());
 
           mStudents.postValue(students);
 
