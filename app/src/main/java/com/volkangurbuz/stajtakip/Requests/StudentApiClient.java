@@ -25,6 +25,7 @@ public class StudentApiClient {
   private MutableLiveData<List<Student>> mStudents;
   private static final String TAG = "StudentApiClient";
   private RetrieveStudentsRunnable retrieveStudentsRunnable;
+  private MutableLiveData<Boolean> mStudentRequestTimeout = new MutableLiveData<>();
 
   public static StudentApiClient getInstance() {
 
@@ -42,6 +43,10 @@ public class StudentApiClient {
     return mStudents;
   }
 
+  public LiveData<Boolean> isStudentRequestTimedOut() {
+    return mStudentRequestTimeout;
+  }
+
   public void showAllStudentsApi() {
 
     if (retrieveStudentsRunnable != null) {
@@ -53,6 +58,8 @@ public class StudentApiClient {
 
     final Future handler = AppExecutors.getInstance().networkIO().submit(retrieveStudentsRunnable);
 
+    mStudentRequestTimeout.setValue(false);
+
     // TIMEOUT\
     AppExecutors.getInstance()
         .networkIO()
@@ -61,7 +68,8 @@ public class StudentApiClient {
               @Override
               public void run() {
 
-                // ket user know its timed out
+                // let user know its timed out
+                mStudentRequestTimeout.postValue(true);
                 handler.cancel(true);
               }
             },

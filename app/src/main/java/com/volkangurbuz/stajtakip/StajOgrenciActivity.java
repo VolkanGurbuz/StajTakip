@@ -48,6 +48,24 @@ public class StajOgrenciActivity extends AppCompatActivity {
 
                 for (Student student : students) {
                   Log.d(TAG, "onChanged: " + student.getStudentName());
+                  mStudentListViewModel.setmDidRetrieveStudents(true);
+                }
+              }
+            });
+
+    // return the timed out, with three seconds does pass to get the timeout.
+    mStudentListViewModel
+        .isStudentRequestTimedOut()
+        .observe(
+            this,
+            new Observer<Boolean>() {
+              @Override
+              public void onChanged(@Nullable Boolean isTimeOut) {
+                if (isTimeOut && !mStudentListViewModel.ismDidRetrieveStudents()) {
+                  Log.d(TAG, "onChanged: timed out...");
+
+                  Toast.makeText(StajOgrenciActivity.this, "connection problem", Toast.LENGTH_SHORT)
+                      .show();
                 }
               }
             });

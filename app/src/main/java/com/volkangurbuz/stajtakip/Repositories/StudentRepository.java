@@ -20,6 +20,10 @@ public class StudentRepository {
     return instance;
   }
 
+  public LiveData<Boolean> isStudentRequestTimedOut() {
+    return mStudentApiClient.isStudentRequestTimedOut();
+  }
+
   public StudentRepository() {
     mStudentApiClient = StudentApiClient.getInstance();
   }

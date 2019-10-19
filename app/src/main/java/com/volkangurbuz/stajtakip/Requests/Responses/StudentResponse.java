@@ -1,5 +1,6 @@
 package com.volkangurbuz.stajtakip.Requests.Responses;
 
+import android.arch.lifecycle.LiveData;
 import android.support.annotation.Nullable;
 
 import com.google.gson.annotations.Expose;
