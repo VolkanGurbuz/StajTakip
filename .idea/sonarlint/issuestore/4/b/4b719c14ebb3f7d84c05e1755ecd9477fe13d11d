@@ -1,0 +1,9 @@
+
+Fsquid:S1659"*Declare "userPassword" on a separate line.(ÊûÈ­ýÿÿÿÿ
+Gsquid:S1659#"+Declare "loginPassword" on a separate line.(•—Ç«þÿÿÿÿ
+qsquid:S1450"ZRemove the "loginButton" field and declare it as a local variable in the relevant methods.(à…÷Ÿ
+wsquid:S1450!"`Remove the "sharedPreferences" field and declare it as a local variable in the relevant methods.(„ºÌ¬
+rsquid:S2068 "V'PASSWORD' detected in this expression, review this potentially hard-coded credential.(öº˜¯ÿÿÿÿÿ
+Bsquid:S1068*",Remove this unused "loggedIn" private field.(»ç€,
+csquid:CommentedOutCodeLine£"<This block of commented-out lines of code should be removed.(ˆÔ“”
+hsquid:CommentedOutCodeLine´"<This block of commented-out lines of code should be removed.(žÍ±øÿÿÿÿ

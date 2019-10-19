@@ -1,0 +1,25 @@
+
+o
+?app/src/main/java/com/volkangurbuz/stajtakip/LoginActivity.java,4/b/4b719c14ebb3f7d84c05e1755ecd9477fe13d11d
+s
+Capp/src/main/java/com/volkangurbuz/stajtakip/AdminMenuActivity.java,4/4/443dfa116a7919e351ebf9393119158167e5c0ed
+x
+Happ/src/main/java/com/volkangurbuz/stajtakip/TeacherControlActivity.java,4/6/46b274a00372ae5a74e5f85eb01e1477cd428acc
+P
+ app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
+u
+Eapp/src/main/java/com/volkangurbuz/stajtakip/StajOgrenciActivity.java,7/6/7652acdd54b2a95a174b20c2e736503fda6f5b2c
+@
+app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
+Ä
+Papp/src/main/java/com/volkangurbuz/stajtakip/Repositories/StudentRepository.java,4/c/4ca0ca78ac3dad37ae148acc6d45f816b0db7943
+Å
+Qapp/src/main/java/com/volkangurbuz/stajtakip/ViewModels/StudentListViewModel.java,d/e/de75f445c90fb3d6310017721ebf70d0551b486d
+{
+Kapp/src/main/java/com/volkangurbuz/stajtakip/Requests/ServiceGenerator.java,d/e/de958ce24187a13c25d6e9f3d2364c14a76d51d1
+p
+@app/src/main/java/com/volkangurbuz/stajtakip/Util/Constants.java,2/5/2527abb0a6b1ee02a57e7e3d439faff65e99fa32
+Ñ
+Tapp/src/main/java/com/volkangurbuz/stajtakip/Requests/Responses/StudentResponse.java,b/1/b1a0489e06e5ba30632ab054749f2be397a7ae5f
+{
+Kapp/src/main/java/com/volkangurbuz/stajtakip/Requests/StudentApiClient.java,a/f/afdd5a7a007e4bbf5cb1535fa00af86c41347865

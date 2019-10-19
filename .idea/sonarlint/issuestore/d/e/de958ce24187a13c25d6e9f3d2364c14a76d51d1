@@ -1,0 +1,7 @@
+
+Qsquid:S1444
+"5Make this "public static retrofitBuilder" field final(Å¹ÍÍùÿÿÿÿ
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÈÓ€˜şÿÿÿÿ
+Psquid:S1118":Add a private constructor to hide the implicit public one.(ñšé7
+"squid:ClassVariableVisibilityCheck
+"[Make retrofitBuilder a static final constant or non-public and provide accessors if needed.(Å¹ÍÍùÿÿÿÿ

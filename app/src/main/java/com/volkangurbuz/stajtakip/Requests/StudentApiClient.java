@@ -96,8 +96,6 @@ public class StudentApiClient {
 
         // the request was success
         if (response.code() == 200) {
-          Log.d(TAG, "Error: " + " no ");
-
           List<Student> students =
               new ArrayList<>(((StudentResponse) response.body()).getStudentList());
 

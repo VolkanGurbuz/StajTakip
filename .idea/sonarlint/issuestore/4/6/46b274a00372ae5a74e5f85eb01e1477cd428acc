@@ -1,0 +1,9 @@
+
+xsquid:UselessImportCheck"ORemove this unused import 'android.support.design.widget.BottomNavigationView'.(–þŒ¢ûÿÿÿÿ
+vsquid:UselessImportCheck"MRemove this unused import 'com.volkangurbuz.stajtakip.Fragment.HelpFragment'.(¾¨§úùÿÿÿÿ
+bsquid:UselessImportCheck">Remove this unused import 'android.support.v4.view.ViewPager'.(«˜‘’
+bsquid:UselessImportCheck"?Remove this unused import 'android.support.annotation.NonNull'.(¼Åß
+xsquid:UselessImportCheck
+"ORemove this unused import 'com.volkangurbuz.stajtakip.Adapter.FragmentAdapter'.(†áŒÈøÿÿÿÿ
+ysquid:UselessImportCheck"PRemove this unused import 'com.volkangurbuz.stajtakip.Fragment.TeacherFragment'.(ïÜÒÖýÿÿÿÿ
+Vsquid:UselessImportCheck"2Remove this unused import 'android.view.MenuItem'.(Ð¬Ó‘

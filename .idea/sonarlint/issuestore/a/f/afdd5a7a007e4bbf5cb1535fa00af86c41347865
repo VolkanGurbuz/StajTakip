@@ -1,0 +1,5 @@
+
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÈÓ€˜þÿÿÿÿ
+Wsquid:UnusedPrivateMethod|"2Remove this unused private "cancelRequest" method.(Ä‚­Ñ
+?squid:S1148r"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+@squid:S1068K")Remove this unused "query" private field.(Ëªé¶
