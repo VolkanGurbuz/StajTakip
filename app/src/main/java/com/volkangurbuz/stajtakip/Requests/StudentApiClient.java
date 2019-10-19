@@ -102,10 +102,9 @@ public class StudentApiClient {
           mStudents.postValue(students);
 
         } else {
-
           String error = response.errorBody().string();
           Log.d(TAG, "Error: " + error);
-          mStudents.postValue(null);
+          mStudents.postValue(null);git add
         }
 
       } catch (IOException e) {
