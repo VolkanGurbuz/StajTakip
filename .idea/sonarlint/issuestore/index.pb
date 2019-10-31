@@ -23,3 +23,9 @@ p
 Tapp/src/main/java/com/volkangurbuz/stajtakip/Requests/Responses/StudentResponse.java,b/1/b1a0489e06e5ba30632ab054749f2be397a7ae5f
 {
 Kapp/src/main/java/com/volkangurbuz/stajtakip/Requests/StudentApiClient.java,a/f/afdd5a7a007e4bbf5cb1535fa00af86c41347865
+q
+Aapp/src/main/java/com/volkangurbuz/stajtakip/Requests/WebApi.java,b/6/b60eb5f2cd2a3631d094fc3ab365d5f7e123d2d0
+o
+?app/src/main/java/com/volkangurbuz/stajtakip/Util/Resource.java,7/a/7a259555e676f6b712edec4f13d05f24c4af6ede
+€
+Papp/src/main/java/com/volkangurbuz/stajtakip/Requests/Responses/ApiResponse.java,6/4/64443cf84272a00446e36c20479e777d335caa2e
