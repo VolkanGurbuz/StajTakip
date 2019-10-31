@@ -1,8 +1,12 @@
 package com.volkangurbuz.stajtakip;
 
+import android.os.Looper;
+import android.support.annotation.MainThread;
+
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
+import java.util.logging.Handler;
 
 public class AppExecutors {
 
@@ -16,12 +20,26 @@ public class AppExecutors {
     }
     return instance;
   }
-  // suppose to regualr execular class, allows to extra functionality
-  // that can schedule run after delay, execute runnable tasks
-  private final ScheduledExecutorService mNetworkIO = Executors.newScheduledThreadPool(3);
-  // TIMEOUT
-  public ScheduledExecutorService networkIO() {
 
-    return mNetworkIO;
+  private final Executor mDiskIO = Executors.newSingleThreadExecutor();
+
+  private final Executor mMainThreadExecuter = new MainThreadExecuter();
+
+  public Executor diskIO() {
+    return mDiskIO;
+  }
+
+  public Executor mMainThread() {
+    return mMainThreadExecuter;
+  }
+
+  public static class MainThreadExecuter implements Executor {
+    private android.os.Handler mainThreadHandler = new android.os.Handler(Looper.getMainLooper());
+    // going to post to the main thread
+
+    @Override
+    public void execute(Runnable command) {
+      mainThreadHandler.post(command);
+    }
   }
 }
